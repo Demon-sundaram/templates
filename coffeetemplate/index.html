@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewMaster - Perfect Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <svg class="nav-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                        <line x1="6" y1="1" x2="6" y2="4"/>
+                        <line x1="10" y1="1" x2="10" y2="4"/>
+                        <line x1="14" y1="1" x2="14" y2="4"/>
+                    </svg>
+                    <span class="nav-title">BrewMaster</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu desktop-menu">
+                    <button class="nav-link" data-section="home">Home</button>
+                    <button class="nav-link" data-section="about">About</button>
+                    <button class="nav-link" data-section="menu">Menu</button>
+                    <button class="nav-link" data-section="contact">Contact</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                    <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <button class="nav-link mobile-nav-link" data-section="home">Home</button>
+                <button class="nav-link mobile-nav-link" data-section="about">About</button>
+                <button class="nav-link mobile-nav-link" data-section="menu">Menu</button>
+                <button class="nav-link mobile-nav-link" data-section="contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Perfect Coffee</h1>
+            <p class="hero-subtitle">Crafted with passion, served with love</p>
+            <button class="hero-btn" data-section="menu">Explore Menu</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-paragraph">
+                        At BrewMaster, we believe that great coffee is more than just a beverage—it's a moment of connection, 
+                        a pause in your day, and a source of inspiration. Since 2010, we've been roasting premium beans from 
+                        around the world, bringing you the perfect cup every time.
+                    </p>
+                    <p class="about-paragraph">
+                        Our master roasters carefully select each bean, ensuring that every sip delivers exceptional quality 
+                        and unforgettable flavor. From our cozy café to your favorite mug, we're dedicated to making your 
+                        coffee experience extraordinary.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50k+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Premium Quality</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <img src="https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Coffee roasting" class="about-image">
+                    <div class="rating-badge">
+                        <div class="rating-content">
+                            <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <span class="rating-number">4.9</span>
+                        </div>
+                        <div class="rating-label">Customer Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="menu-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Discover our signature coffee creations</p>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image-container">
+                        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Espresso" class="menu-image">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">Espresso</h3>
+                            <span class="menu-price">$3.50</span>
+                        </div>
+                        <p class="menu-description">Rich and bold espresso shot</p>
+                        <button class="menu-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image-container">
+                        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Cappuccino" class="menu-image">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">Cappuccino</h3>
+                            <span class="menu-price">$4.75</span>
+                        </div>
+                        <p class="menu-description">Perfect blend of espresso and steamed milk</p>
+                        <button class="menu-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image-container">
+                        <img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Latte" class="menu-image">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">Latte</h3>
+                            <span class="menu-price">$5.25</span>
+                        </div>
+                        <p class="menu-description">Smooth espresso with velvety milk foam</p>
+                        <button class="menu-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image-container">
+                        <img src="https://images.pexels.com/photos/1059031/pexels-photo-1059031.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Americano" class="menu-image">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">Americano</h3>
+                            <span class="menu-price">$4.00</span>
+                        </div>
+                        <p class="menu-description">Classic black coffee with hot water</p>
+                        <button class="menu-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image-container">
+                        <img src="https://images.pexels.com/photos/887850/pexels-photo-887850.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Mocha" class="menu-image">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">Mocha</h3>
+                            <span class="menu-price">$5.75</span>
+                        </div>
+                        <p class="menu-description">Chocolate and coffee perfection</p>
+                        <button class="menu-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image-container">
+                        <img src="https://missourigirlhome.com/wp-content/uploads/2021/05/homemade-cold-brew-coffee-with-cream.jpg" 
+                             alt="Cold Brew" class="menu-image">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header-row">
+                            <h3 class="menu-name">Cold Brew</h3>
+                            <span class="menu-price">$4.50</span>
+                        </div>
+                        <p class="menu-description">Smooth, refreshing cold coffee</p>
+                        <button class="menu-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="section-title white">Visit Us Today</h2>
+                <p class="section-subtitle gray">Experience the perfect cup at our café</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <h3 class="contact-title">Get in Touch</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>123 Coffee Street, Bean City, BC 12345</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span>(555) 123-BREW</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>hello@brewmaster.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>Mon-Sun: 6:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3 class="contact-title">Follow Us</h3>
+                        <div class="social-links">
+                            <div class="social-link">f</div>
+                            <div class="social-link">@</div>
+                            <div class="social-link">in</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 class="contact-title">Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Your Name" class="form-input" required>
+                        <input type="email" placeholder="Your Email" class="form-input" required>
+                        <textarea placeholder="Your Message" rows="4" class="form-input form-textarea" required></textarea>
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg class="footer-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                        <line x1="6" y1="1" x2="6" y2="4"/>
+                        <line x1="10" y1="1" x2="10" y2="4"/>
+                        <line x1="14" y1="1" x2="14" y2="4"/>
+                    </svg>
+                    <span class="footer-title">BrewMaster</span>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 BrewMaster. All rights reserved by <span>Sundaram Pandey</span>.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
